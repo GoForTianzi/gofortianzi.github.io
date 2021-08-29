@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #343f61;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sawarabi Gothic', 'Helvetica Neue', san-serif;
+    line-height: 1.5;
+    margin: 0px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    font-size: 5vmax;
+}
+
+.nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    /* transition: 0.6s; */
+}
+
+.nav-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    list-style: none;
+}
+
+.nav-list li {
+    position: relative;
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+}
+
+.nav-list a {
+    position: relative;
+    margin: 0 15px;
+}
+
+#logo {
+    position: relative;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+}
+
+#welcome-section {
+    margin-top: 30px;
+    left: 0px;
+    min-height: 300px;
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#welcome-section h1 {
+    font-weight: 400;
+}
+
+#welcome-section p {
+    font-size: 3vmax;
+    line-height: 6vmax;
+}
+
+.projects-grid {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-thumbnail {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    height: 4rem;
+    background-color: #eee;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.profile-link {
+    font-size: 1rem;
+    color: #757679;
+}
+
+footer {
+    margin-top: 6px;
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+    padding-top: 40px;
+    background-color: #eee;
+}
+
+#sns {
+    display: inline-block;
+}
+
+#copyright {
+    color: rgb(183, 183, 184);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 450px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.header-image {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_description {
+    margin: 50px auto 250px auto;
+    width: 800px;
+    background-color: white;
+}
+
+@media (max-width: 800px) {
+    .project_description {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 250px;
+    }
+    #container {
+        padding: 0 10px;
+    }
+}
+
+#about {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.img-div {
+    margin: 30px auto;
+    padding: 10px 30px;
+    background: #eeeefa;
+}
+
+#black {
+    background: black;
+    padding: 10px 0px;
+    margin: 50px 0px;
+}
+
+.mobile_image {
+    height: 400px;
+    width: auto;
+}
+
+.descrip_image {
+    height: 700px;
+    width: auto;
+    margin: 10px 15px;
+}
+
+@media (max-width: 800px) {
+    .descrip_image {
+        height: 70vmax;
+        margin: 10px 0 11px 0;
+    }
+}
+
+.wire {
+    margin: 30px auto;
+    width: 800px;
+}
+
+@media (max-width: 800px) {
+    .wire {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+.project_description h1 {
+    line-height: 6rem;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    .project_description h1 {
+        line-height: 3rem;
+        margin-top: 30px;
+    }
+}
+
+.project_description h2 {
+    line-height: 9rem;
+}
+
+.project_description h3 {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+ol h3 {
+    color: rgb(161, 161, 161);
+}
+
+.project_description p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+
+.descrip-list {
+    text-align: left;
+    width: 550px;
+    margin: 12px auto 13px;
+}
+
+@media (max-width: 550px) {
+    .descrip-list {
+        width: auto;
+        margin: 0;
+        padding: 2px 10px 3px;
+    }
+}
+
+.process-container {
+    text-align: left;
+    background-color: #eeeefa;
+    width: 550px;
+    margin: 50px auto;
+    padding: 2px 80px 33px;
+}
+
+@media (max-width: 550px) {
+    .process-container {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 2px 0px 33px;
+    }
+    .process-container li {
+        margin-left: 40px !important;
+    }
+    .process-container h3,
+    .process-container p {
+        margin-left: 20px;
+    }
+}
+
+.project_description li {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 2rem;
+}
+
+.fa {
+    display: flex;
+    font-size: 30px;
+}
