@@ -118,6 +118,13 @@ h1 {
     background-color: #eee;
 }
 
+#more {
+    display: block;
+    background-color: lightgrey;
+    padding: 100px;
+    color: grey;
+}
+
 header {
     font-size: 1.5rem;
 }
@@ -136,7 +143,6 @@ header {
 }
 
 footer {
-    margin-top: 6px;
     font-size: 1rem;
     color: grey;
     text-align: center;

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoForTianzi</title>
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
 
 <body>
     <nav class="nav">
-        <a id="logo" href="index.html">Go For Tianzi</a>
+        <a id="logo" href="./">Go For Tianzi</a>
         <ul class="nav-list">
-            <li> <a href="about.html">About</a></li>
+            <li> <a href="page/about.html">About</a></li>
         </ul>
     </nav>
 
@@ -33,7 +33,7 @@
     <section id="projects" class="projects-section">
         <div class="projects-grid">
 
-            <a href="dist/oyo.html" class="project-tile">
+            <a href="page/oyo.html" class="project-tile">
                 <img class="project-thumbnail" src="https://images.unsplash.com/photo-1543975978-4fa3ae01cad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80" alt="OYO Japan Register Screen Mockup" />
                 <span class="project-title">
                     OYO Japan Registration Mockup
@@ -42,13 +42,13 @@
 
 
 
-            <a href="dist/mail_app.html" class="project-tile">
+            <a href="page/mail_app.html" class="project-tile">
                 <img class="project-thumbnail" src="https://images.unsplash.com/photo-1627618999952-6d9ea355d679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80" alt="Mail App" />
                 <span class="project-title">Toyota Retailer Mail App</span>
             </a>
 
-            <a href="dist/ramen_poster.html" class="project project-tile">
-                <img class="project-thumbnail" src="dist/img/bonbo_night_mockup.jpg" alt="ramen shop poster" />
+            <a href="page/ramen_poster.html" class="project project-tile">
+                <img class="project-thumbnail" src="assets/img/bonbo_night_mockup.jpg" alt="ramen shop poster" />
                 <span class="project-title">Ramen Shop Poster</span>
             </a>
 
@@ -70,10 +70,11 @@
 
 
 
-            <a href="" class="project-tile">
-                <img class="project-thumbnail" src="" alt="" />
-                <span class="project-title" style="color: grey"><i>More on the way!</i></span>
-            </a>
+            <!-- <a href="" class="project-tile"> -->
+            <div>
+                <span id="more"><i>More on the way!</i></span>
+            </div>
+
 
 
 
