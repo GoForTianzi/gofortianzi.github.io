@@ -208,28 +208,20 @@ footer {
     width: auto;
 }
 
-.descrip_image {
-    height: 700px;
-    width: auto;
-    margin: 10px 15px;
-}
-
-@media (max-width: 800px) {
-    .descrip_image {
-        height: 70vmax;
-        margin: 10px 0 11px 0;
-    }
+#ramen_poster {
+    max-height: 900px;
 }
 
 .wire {
     margin: 30px auto;
     width: 800px;
+    object-fit: contain;
 }
 
 @media (max-width: 800px) {
     .wire {
         width: 100%;
-        margin: 10px;
+        margin: 0px;
     }
 }
 
