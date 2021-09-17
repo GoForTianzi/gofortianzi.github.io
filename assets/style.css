@@ -66,25 +66,39 @@ h1 {
 }
 
 #welcome-section {
-    margin-top: 30px;
-    left: 0px;
-    min-height: 300px;
-    height: 74vh;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
+    min-height: 480px;
 }
 
-#welcome-section h1 {
+@media (max-width: 375px) {
+    #welcome-section {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+
+.greeting {
+    line-height: 5vmax;
+    padding-top: 190px;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+#greet_video {
+    padding-top: 30px;
+}
+
+#welcome-section h2 {
     font-weight: 400;
+    font-size: 3vmax;
 }
 
 #welcome-section p {
-    font-size: 3vmax;
-    line-height: 6vmax;
+    font-size: 2vmax;
 }
 
 .projects-grid {
@@ -98,12 +112,14 @@ h1 {
     height: 300px;
     width: 100%;
     object-fit: cover;
+    text-align: center;
+    justify-content: center;
 }
 
 .project-title {
     display: block;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 1.2rem;
 }
 
@@ -119,10 +135,11 @@ h1 {
 }
 
 #more {
-    display: block;
+    font-size: 1.2rem;
     background-color: lightgrey;
-    padding: 100px;
-    color: grey;
+    color: rgb(129, 129, 129);
+    height: 220px;
+    padding-top: 80px;
 }
 
 header {
@@ -171,9 +188,16 @@ footer {
     margin-top: 30px;
     margin-bottom: 0px;
     height: 65vh;
+    min-height: 550px;
     width: 100%;
     object-fit: cover;
 }
+
+
+/* .title_fig {
+    display: block;
+    float: left;
+} */
 
 .project_description {
     margin: 50px auto 250px auto;
@@ -212,6 +236,10 @@ footer {
 .mobile_image {
     height: 400px;
     width: auto;
+}
+
+.fw_image {
+    width: 100%;
 }
 
 #ramen_poster {
