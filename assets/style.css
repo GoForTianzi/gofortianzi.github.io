@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500;1,600;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color: #343f61;
+    color: rgb(41, 41, 41);
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 
 body {
     font-size: 17px;
-    font-family: 'Sawarabi Gothic', 'Helvetica Neue', san-serif;
+    font-family: 'Lora', serif;
     line-height: 1.47059;
     margin: 0px;
     text-align: center;
@@ -24,47 +24,49 @@ body {
 }
 
 h1 {
-    color: #333;
     font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
 }
 
 .nav {
     top: 0;
     left: 0;
+    color: rgba(0, 0, 0, 0);
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #fff;
     z-index: 10;
-    /* transition: 0.6s; */
+    transition: 0.8s ease-out;
+}
+
+path,
+.nav-a {
+    transition: 0.8s cubic-bezier(0.2, 0.01, 0.13, 0.99);
 }
 
 .nav-list {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     margin-right: 0.5rem;
     list-style: none;
 }
 
 .nav-list li {
     position: relative;
-    font-size: 19px;
-    padding: 1rem 0.5rem;
-}
-
-.nav-list a {
-    position: relative;
-    margin: 0 15px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
 }
 
 #logo {
+    fill: rgb(41, 41, 41);
     position: relative;
     font-size: 1.3rem;
     margin-left: 1.5rem;
+    margin-top: 10px;
 }
 
 #welcome-section {
@@ -100,7 +102,7 @@ h1 {
 }
 
 #welcome-section h2 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
@@ -124,6 +126,8 @@ h1 {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .045em;
 }
 
 .contact-section {
@@ -195,10 +199,17 @@ footer {
 
 .header-image {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 68px;
     margin-bottom: 0px;
     max-height: 360px;
     max-width: 1000px;
+    object-fit: cover;
+}
+
+.seasonal {
+    height: 10vh;
+    margin-top: 30px;
+    margin-bottom: 0px;
     object-fit: cover;
 }
 
@@ -212,7 +223,7 @@ footer {
 }
 
 .project_description a {
-    color: rgb(2, 2, 136);
+    color: rgb(6 6 249);
 }
 
 #container {
@@ -289,6 +300,7 @@ footer {
 
 .project_description h1 {
     font-size: 48px;
+    font-style: italic;
     line-height: 1.08349;
     letter-spacing: .002em;
     margin-top: 3rem;
@@ -296,6 +308,7 @@ footer {
 
 .project_description h2 {
     font-size: 24px;
+    font-style: italic;
     line-height: 4rem;
     letter-spacing: .012em;
     margin-bottom: 20px;
@@ -316,16 +329,19 @@ footer {
 }
 
 .project_description h3 {
-    font-size: 19px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
     line-height: 1.23536;
-    letter-spacing: .054em;
+    letter-spacing: .055em;
     margin-top: 50px;
     margin-bottom: 10px;
 }
 
 .project_description p {
     font-size: 19px;
-    line-height: 1.223;
+    /* line-height: 1.223; */
+    font-weight: 500;
     letter-spacing: .012em;
 }
 
@@ -344,6 +360,10 @@ footer {
     .project_description h3 {
         margin-top: 33px;
     }
+}
+
+h3 {
+    text-align: center;
 }
 
 .process-container {
@@ -365,10 +385,11 @@ footer {
 
 .project_description li {
     font-size: 17px;
-    letter-spacing: .001em;
+    letter-spacing: .015em;
     margin-top: 12px;
     margin-left: 20px;
     line-height: 1.305;
+    font-weight: 500;
 }
 
 .fa {
