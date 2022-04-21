@@ -20,7 +20,6 @@ body {
     margin: 0px;
     text-align: center;
     color: rgb(41, 41, 41);
-    ;
 }
 
 h1 {
@@ -66,7 +65,9 @@ path,
     position: relative;
     font-size: 1.3rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-top: 10px;
+    z-index: 1;
 }
 
 #welcome-section {
@@ -122,6 +123,7 @@ path,
 }
 
 .project-title {
+    font-style: italic;
     display: block;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -226,7 +228,7 @@ footer {
     color: rgb(6 6 249);
 }
 
-#container {
+.container {
     max-width: 768px;
     margin: auto;
     padding: 0 10px;
@@ -253,9 +255,20 @@ footer {
     margin-top: 100px;
 }
 
-.img-div {
+.two_container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.two_up {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-gap: 0.6rem;
+    justify-items: center;
+    justify-content: space-evenly;
     margin: 30px auto;
-    padding: 2.4rem 0px;
+    padding: 2.4rem 20px;
     background: #eeeefa;
 }
 
@@ -266,13 +279,21 @@ footer {
 }
 
 .mobile_image {
-    height: 430px;
+    max-width: 100%;
 }
 
 .fw_image {
     margin: auto;
     width: 100%;
     padding-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30px auto;
+    padding: 2.4rem 0px;
+    background: #eeeefa;
 }
 
 .wire {
@@ -282,19 +303,25 @@ footer {
 }
 
 .two_one {
-    padding: 0.6rem 0.6rem;
+    padding: 0.6rem 0rem;
+    max-height: 600px;
+    max-width: 100%;
+}
+
+iframe {
+    margin-top: 10px;
 }
 
 @media (max-width: 800px) {
     .wire {
         width: 100%;
-        margin: 0px;
+        margin: 0 0 9px;
     }
 }
 
-@media (max-width: 342px) {
-    .two_one {
-        width: 90%;
+@media (max-width: 425px) {
+    .two_up {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -332,7 +359,7 @@ footer {
     font-size: 20px;
     font-weight: 600;
     font-style: italic;
-    line-height: 1.23536;
+    line-height: 1.358;
     letter-spacing: .055em;
     margin-top: 50px;
     margin-bottom: 10px;
