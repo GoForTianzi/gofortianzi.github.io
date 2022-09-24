@@ -8,7 +8,7 @@
     <title>GoValley Production Fan Treats</title>
     <link rel="stylesheet" href="../assets/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+    <script type="text/javascript" src="../js/nav.js" --allow-file-access-from-files></script>
 </head>
 
 <body>
@@ -21,25 +21,9 @@
             </div>
         </a>
         <ul class="nav-list">
-            <li> <a class="nav-a" href="page/about.html">about</a></li>
+            <li> <a class="nav-a" href="about.html">about</a></li>
         </ul>
     </nav>
-    <script>
-        $(document).ready(function() {
-            $(window).on("scroll", function() {
-                var wn = $(window).scrollTop();
-                if (wn > 120) {
-                    $("nav").css("background", "rgba(120,120,120,0.5)");
-                    $("path").css("fill", "white");
-                    $(".nav-a").css("color", "white");
-                } else {
-                    $("nav").css("background", "#fff");
-                    $("path").css("fill", "black");
-                    $(".nav-a").css("color", "black");
-                }
-            });
-        });
-    </script>
     <section class="project_description">
         <div class="container">
             <img class="header-image" src="../assets/img/GoV_truck_orig.jpeg" />

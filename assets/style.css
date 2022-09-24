@@ -16,7 +16,7 @@ html {
 body {
     font-size: 17px;
     font-family: 'Lora', serif;
-    line-height: 1.47059;
+    line-height: 1.7059;
     margin: 0px;
     text-align: center;
     color: #252B33;
@@ -130,6 +130,7 @@ path,
     text-align: center;
     justify-content: center;
     border-radius: 8px;
+    background: linear-gradient(45deg, #9ba3c8, transparent);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -299,7 +300,6 @@ footer {
     }
     .project_description {
         width: 100%;
-        margin: auto;
         padding-bottom: 25vmax;
     }
     .container {
@@ -414,7 +414,7 @@ iframe {
 .project_description h1 {
     font-size: 48px;
     font-style: italic;
-    line-height: 1.08349;
+    line-height: 1.9349;
     letter-spacing: .002em;
     margin-top: 3rem;
     letter-spacing: 0.019rem;
@@ -423,7 +423,7 @@ iframe {
 .project_description h2 {
     font-size: 24px;
     font-style: italic;
-    line-height: 4rem;
+    line-height: 2rem;
     letter-spacing: .012em;
     margin-bottom: 20px;
 }
@@ -449,7 +449,7 @@ iframe {
     font-size: 20px;
     font-weight: 600;
     font-style: italic;
-    line-height: 1.358;
+    line-height: 2;
     letter-spacing: .055em;
     margin-top: 50px;
     margin-bottom: 10px;
